@@ -4,11 +4,9 @@ title: Syllabus
 permalink: /syllabus/
 ---
 
-**Project: The Invisible Work Initiative**
+**M.Eng. Project: The Invisible Work Initiative**
 
 Can AI recognize, perform, and model the work that keeps software alive?
-
-*M.Eng. Project Syllabus*
 
 **Project Advisor:** John Meluso, PhD
 
@@ -110,6 +108,4 @@ Each semester, you will earn credit for successful gate reviews, peer evaluation
 
 ## How we Work Together
 
-All project work is developed in the [Invisible Work Initiative's repositories](https://github.com/invisible-work-initiative) under open licenses. Joining the project means you agree to work this way. Our primary language is Python, but we'll use other languages as needed. Code will be fully reproducible. All work goes into public repositories under open licenses from the start, not at the end. You will experience both the benefits and the frictions of working in the open. Each gate deliverable must be reproducible by a teammate from the repository alone. If it only runs on your laptop, it does not exist.
-
-- AI tools are permitted and expected. You are accountable for everything you submit. Submitting unverified generated work that others must review is the exact failure this initiative exists to address.
+All project work is developed in the [Invisible Work Initiative's repositories](https://github.com/invisible-work-initiative) under open licenses. Joining the project means you agree to work this way. Our primary language is Python, but we'll use other languages as needed. Code will be fully reproducible. All work goes into public repositories under open licenses from the start, not at the end. You will experience both the benefits and the frictions of working in the open. Each gate deliverable must be reproducible by a teammate from the repository alone. If it only runs on your laptop, it does not exist. AI tools are permitted and expected. You are accountable for everything you submit. Submitting unverified generated work that others must review is the exact failure this initiative exists to address.
