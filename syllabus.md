@@ -46,37 +46,31 @@ The thesis of this project:
 
 ***AI systems produce vast amounts of visible work. But small numbers of humans perform the invisible work of judging and coordinating work with stakeholders. Humans alone cannot keep up with AI products. This asymmetry is breaking organizations and computing infrastructure.***
 
-This project has three tracks which will explore different aspects of this problem. Can AI recognize invisible work (Track 1)? Can it responsibly perform part of it (Track 2)? What happens to a human-AI collective when it cannot (Track 3)? The tracks share one vocabulary and depend on each other's outputs (see Interfaces below).
+This project builds one system that addresses part of this problem: an automated quality checker for incoming bug reports. Several teams build the system together. Each team owns one part and depends on the others' work (see Project Teams below).
 
 **How I run projects.** I will give you a goal, targets, and kind, honest feedback. I will not give you a recipe. This means your team gets to make the decisions, write down your reasons, and ask for help when stuck. Yes, you're likely to make lots of mistakes, which is great! ***Mistakes are how we learn.*** I expect us all to create an environment where everyone feels safe to make mistakes. So you'll experiment, try things, fail sometimes, and try again. An important rule, though: If a problem has blocked you for more than three days, you must take it somewhere (a teammate, another team, a public forum, an AI assistant). Staying silently stuck is the one form of failure this course does not credit. So help each other and we'll make progress as a team!
 
-## Track 1: The Invisible Work Benchmark
+## Project Teams
 
-**Overview.** Can current AI systems recognize invisible maintainer work at all? Nobody has tested this. You will build the first benchmark that does, from public data. This could include a public benchmark dataset, an evaluation harness, and a findings report measuring how well leading AI models identify invisible maintainer tasks. The initial plan is to start with two relatively simple task types whose correct answers are the most objective: duplicate detection (was this issue later closed as a duplicate, and of what?) and report validity (was this security report later confirmed or rejected?). Both have documented historical outcomes in public data (like past GitHub Issues), which is what makes evaluation possible. Other task types are stretch goals to pursue only after the pipeline works.
+This project builds one system: an automated quality checker for incoming bug reports. The teams below build it together. Each team owns one part of the system and depends on the others' work.
 
-**What you'll create.** A calibration study of your own judgment against historical outcomes, a public benchmark dataset, an evaluation harness, and report of findings. Together these demonstrate data engineering, evaluation design, and judgment about AI capabilities: skills employers actively seek.
+**Software Systems Engineering Team.** This team decides what the system must do and how we will know it works. You will write the requirements, design the shared format for findings, and define the interfaces the other teams build to. You will assemble a dataset of historical bug reports from several open source projects, build the baselines, and build the evaluation that measures every part of the system. You will also own how reports enter the system and how findings are returned to the maintainer. You can show employers that you can lead requirements, verification and validation, and integration on a real system.
 
-**Need.** 3 to 5 students. Python experience preferred. Also useful are API experience, basic statistics, and patience for careful labeling. No prior ML evaluation experience required.
+**Report Analysis Team.** This team judges a report on what it contains. You will decide whether a report includes what a good bug report needs, such as steps to reproduce and a clear statement of expected versus observed behavior. You will turn published research on bug report quality into checks the system can run. Each check produces a finding the maintainer can inspect. You can show employers that you can turn a research literature into a working evaluation of text.
 
-## Track 2: The Triage Sentinel
+**Claim Verification Team.** This team checks whether a report's claims are true. You will find the files, functions, and commits a report cites and confirm that they exist and behave as the report says. The lowest-quality reports often cite code that is not there, so this work matters. You will work directly against real codebases and their version history. You can show employers that you can analyze code and detect unsupported claims.
 
-**Overview.** One part of invisible work is so dull, dirty, and dangerous that people are quitting over it: reviewing large quantities of low-quality, often AI-generated reports (called "triaging"). Can an AI system effectively triage incoming reports? You will build the system and provide evidence that it works. This is likely to include an open source tool that pre-processes incoming issues or vulnerability reports for a project, tasks like clustering duplicates, checking claims against the codebase, and drafting evidence-based assessments for humans to act on.
+<!-- FOUR-TEAM VERSION. To use four teams instead of three, delete the three team descriptions above (keep the heading and intro paragraph) and uncomment the block below.
 
-**What you'll create.** Before any agent exists, you'll build a replay harness: a curated collection of historical reports with known outcomes (confirmed, rejected, duplicate), plus simple baselines such as rule-based filters and embedding-based duplicate detection. The agent must then beat those baselines on replayed history. Ultimately, the goal is to create a working open source tool, an evaluation report, a security analysis against a recognized risk framework, and documented design reviews with practitioners. This gives employers evidence you can perform system design, evaluation, security analyses, and stakeholder communication.
+**Software Systems Engineering Team.** This team decides what the system must do and how we will know it works. You will write the requirements, design the shared format for findings, and define the interfaces every other team builds to. You will assemble a dataset of historical bug reports from several open source projects, build the baselines, and build the evaluation that measures the whole system. You can show employers that you can lead requirements and verification and validation on a real system.
 
-**Need.** 3 to 5 students. Python required. Experience with TypeScript, interest in security, APIs, human-computer interaction, and an interest in communicating with practitioners useful.
+**Integration Team.** This team builds the layer that connects the other teams' work. You will take an incoming report, pass it to the analysis teams, collect their findings, and assemble the single report the maintainer sees. You will state clearly what the system could not check. As a stretch, you may connect the system to GitHub so that a new issue is reviewed automatically. You can show employers that you can design and build the integration layer that turns separate parts into one working system.
 
-## Track 3: The Interpretive Bottleneck
+**Report Analysis Team.** This team judges a report on what it contains. You will decide whether a report includes what a good bug report needs, such as steps to reproduce and a clear statement of expected versus observed behavior. You will turn published research on bug report quality into checks the system can run. Each check produces a finding the maintainer can inspect. You can show employers that you can turn a research literature into a working evaluation of text.
 
-**Overview.** Why does adding capable AI to a group sometimes make the group worse? The curl example has a clear abstract structure: producing visible work became nearly free, interpreting it stayed costly and human, and the group's interpretive capacity became the bottleneck. You will build a model that explains when this happens and what changes the outcome.
+**Claim Verification Team.** This team checks whether a report's claims are true. You will find the files, functions, and commits a report cites and confirm that they exist and behave as the report says. The lowest-quality reports often cite code that is not there, so this work matters. You will work directly against real codebases and their version history. You can show employers that you can analyze code and detect unsupported claims.
 
-**What you'll create.** An agent-based simulation model in which tasks vary in how easy they are to interpret, agents vary in interpretive ability, and producing visible artifacts is cheap while interpreting them is costly. Before the model is used to make any new claims, it must reproduce three quantified patterns from real data: reduced the falling signal rate in the curl case (roughly one valid report in twenty by late 2025), the load concentration found by Census III (one or two people carrying over 80 percent of contributions in 40 percent of top projects), and the maintainer exit pattern seen in cases like Ingress NGINX. Then the model does its real job: comparing interventions. Which policies (filtering, making submissions costly, adding interpretive capacity, redistributing load) delay or prevent collapse, and at what cost? Two interfaces make this concrete. Track 1's accuracy results estimate your AI agents' interpretive-ability parameters, and Track 2's Sentinel enters your comparison as one implemented intervention, so your model makes a prediction their system can check. The aim is to produce an open, tested simulation codebase, a validation report against real-world data, an intervention comparison with practical implications, and a public interactive visualization that communicates to technical and non-technical audiences alike.
-
-**Need.** 3 to 5 students. Python required. Useful: simulation or statistics background, and one member comfortable with light front-end work. No prior agent-based modeling experience required.
-
-## How the Tracks Connect: Interfaces
-
-TBD
+-->
 
 ## Who Should Apply
 
@@ -92,17 +86,17 @@ Python is our working language. Prior experience with AI systems, security, simu
 
 ## Attendance
 
-- One all-hands meeting every two weeks (about an hour) where each track shares progress, decisions, and blockers. Gate rehearsals happen here.
+- One all-hands meeting every two weeks (about an hour) where each team shares progress, decisions, and blockers. Gate rehearsals happen here.
 
-- One weekly track check-in with me, scheduled per team in the first week of class. In these meetings, I don't need you to prove to me that you're making progress – that's what the gates are for. Instead, these are for you. What do you need? What questions do you have? What do you want feedback on? Just come prepared with something to discuss that helps your team advance toward its goal.
+- One weekly team check-in with me, scheduled per team in the first week of class. In these meetings, I don't need you to prove to me that you're making progress – that's what the gates are for. Instead, these are for you. What do you need? What questions do you have? What do you want feedback on? Just come prepared with something to discuss that helps your team advance toward its goal.
 
 ## Grading Criteria
 
 Each semester, you will earn credit for successful gate reviews, peer evaluations, and a self-assessment. An ambitious attempt that partially fails, with a clear account of what you learned, is worth more than a safe attempt that fully succeeds.
 
-- **50% Gate Reviews (by track).** Two stage gate reviews, weighted 20% and 30% respectively. You will present what you decided and why, what you learned and built, and what you tried and abandoned. Failure and success can both earn credit as long as your team provides evidence.
+- **50% Gate Reviews (by team).** Two stage gate reviews, weighted 20% and 30% respectively. You will present what you decided and why, what you learned and built, and what you tried and abandoned. Failure and success can both earn credit as long as your team provides evidence.
 
-- **30% Peer Evaluations.** Members of the other tracks will evaluate what your track produced. Other members of your team will evaluate what you produced.
+- **30% Peer Evaluations.** Members of the other teams will evaluate what your team produced. Other members of your team will evaluate what you produced.
 
 - **20% Self Assessment.** What you contributed, what you did well, what you did not do as well as you wanted, what you would do differently, what you can do in your next role.
 
