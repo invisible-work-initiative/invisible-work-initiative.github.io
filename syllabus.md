@@ -4,23 +4,23 @@ title: Syllabus
 permalink: /syllabus/
 ---
 
-**M.Eng. Project: The Invisible Work Initiative**
+**M.Eng. Project: AI for Open Source Sustainability
 
-Can AI recognize, perform, and model the work that keeps software alive?
+Can AI recognize and perform the labor that keeps software working?
 
 **Project Advisor:** John Meluso, PhD
 
 ## About this Project
 
-**Project Advisor** John Meluso, Systems Engineering Program, Cornell University.
+**Project Advisor.** John Meluso, Systems Engineering Program, Cornell University.
 
-**Project Area** Open Source Ecosystems, Human-AI Collaboration, AI Agents, Benchmarking and Evaluation, Data Science, Agent-Based Modeling, Sociotechnical System Design.
+**Project Area.** Open Source Ecosystems, Human-AI Collaboration, AI Agents, Benchmarking and Evaluation, Data Science, Agent-Based Modeling, Sociotechnical System Design.
 
-**Project Keywords** Artificial Intelligence; Invisible Labor; Open Source Sustainability; AI Agents; Benchmarks; Agent-Based Modeling; Human-AI Teaming; Triage.
+**Project Keywords.** Artificial Intelligence; Invisible Labor; Open Source Sustainability; AI Agents; Benchmarks; Agent-Based Modeling; Human-AI Teaming; Triage.
 
 ### How do I join?
 
-To apply, [fill out the project application here](https://forms.gle/x56KEJ5Pex9PAeTU9). You'll be asked to include a resume/CV and some information about yourself! I encourage you to answer in your own words so I can get to know you; don't worry, I don't expect perfect spelling or grammar.
+To apply, fill out the project application here (provided before fall semester). You'll be asked to include a resume/CV and some information about yourself! I encourage you to answer in your own words so I can get to know you; don't worry, I don't expect perfect spelling or grammar.
 
 If you receive an invitation to join:
 
@@ -32,12 +32,10 @@ If you receive an invitation to join:
 
 Software of all kinds depends on work that few people see. Reviewing bug reports, judging their severity, detecting duplicates, mentoring newcomers, and deciding what a confusing request is really asking for are all examples of this. Tasks like these keep critical software operating, but they rarely leave the kind of visible record that code does. This is called [invisible work](https://dl.acm.org/doi/10.1145/3757417).
 
-For years, open source workers (in software and other fields) have been straining under invisible workloads. Rather than fixing things, AI is generally making things worse, often much worse. For instance:
+For years, open source workers (in software and other fields) have been straining under invisible workloads. Unfortunately, generative AI has largely added to this volume of work to date. For instance:
 
 - [Census III](https://www.linuxfoundation.org/press/open-source-usage-trends-and-security-challenges-revealed-in-new-study), by the Linux Foundation and Harvard, found that 40 percent of the most widely used open source projects depend on one or two developers for more than 80 percent of contributions. This makes them vulnerable to attacks and growth of AI submissions.
-
 - In November 2025, [Kubernetes retired Ingress NGINX](https://www.kubernetes.io/blog/2026/01/29/ingress-nginx-statement/), a component used in roughly half of cloud computing environments. Development had fallen to one or two people working in their spare time; no replacements could be found.
-
 - In January 2026, curl, a widely-used data transfer program, [ended its bug bounty program](https://www.theregister.com/2026/01/21/curl_ends_bug_bounty/) due to an influx of AI-generated vulnerability reports. curl's small volunteer security team couldn't keep up. Django, Node.js, and libxml2 restricted their intake processes for the same reason.
 
 - Meanwhile, benchmarks for AI coding agents, such as the [SWE-bench](https://arxiv.org/abs/2310.06770) family, measure whether an agent can produce a code patch that resolves an issue. None of them measure the judgment work described above.
@@ -48,41 +46,31 @@ The thesis of this project:
 
 This project builds one system that addresses part of this problem: an automated quality checker for incoming bug reports. Several teams build the system together. Each team owns one part and depends on the others' work (see Project Teams below).
 
-**How I run projects.** I will give you a goal, targets, and kind, honest feedback. I will not give you a recipe. This means your team gets to make the decisions, write down your reasons, and ask for help when stuck. Yes, you're likely to make lots of mistakes, which is great! ***Mistakes are how we learn.*** I expect us all to create an environment where everyone feels safe to make mistakes. So you'll experiment, try things, fail sometimes, and try again. An important rule, though: If a problem has blocked you for more than three days, you must take it somewhere (a teammate, another team, a public forum, an AI assistant). Staying silently stuck is the one form of failure this course does not credit. So help each other and we'll make progress as a team!
+**How I run projects.** I will give you a goal, targets, and kind, honest feedback. I will not give you a recipe. This means your team gets to make the decisions, write down your reasons, and ask for help when stuck. Yes, you're likely to make lots of mistakes, which is great! *Mistakes are how we learn.* I expect us all to create an environment where everyone feels safe to make mistakes. So you'll experiment, try things, fail sometimes, and try again. An important rule, though: If a problem has blocked you for more than three days, you must seek help (from a teammate, another team, a public forum, an AI assistant). Staying silently stuck is the one form of failure this course does not credit. So help each other and we'll make progress as a team!
 
 ## Project Teams
 
 This project builds one system: an automated quality checker for incoming bug reports. The teams below build it together. Each team owns one part of the system and depends on the others' work.
 
-**Software Systems Engineering Team.** This team decides what the system must do and how we will know it works. You will write the requirements, design the shared format for findings, and define the interfaces the other teams build to. You will assemble a dataset of historical bug reports from several open source projects, build the baselines, and build the evaluation that measures every part of the system. You will also own how reports enter the system and how findings are returned to the maintainer. You can show employers that you can lead requirements, verification and validation, and integration on a real system.
+**Software Systems Engineering.** This team specifies what the system must do and how we will know it works. You will write a concept of operations, write system-level requirements, verifications, and tests for the integrated system. You will assemble a dataset of historical bug reports from several open source projects and build the test that measures system performance against a standard. You'll be able to show employers that you can lead requirements, verification and validation, and system-level testing on a real system.
 
-**Report Analysis Team.** This team judges a report on what it contains. You will decide whether a report includes what a good bug report needs, such as steps to reproduce and a clear statement of expected versus observed behavior. You will turn published research on bug report quality into checks the system can run. Each check produces a finding the maintainer can inspect. You can show employers that you can turn a research literature into a working evaluation of text.
+**Input Evaluation Subsystem.** This team designs the subsystem that evaluates whether incoming report is worth investigating. You will write requirements, verifications, and tests for your subsystem. Your solution might need to assess if necessary contents are present, such as steps to reproduce and a clear statement of expected versus observed behavior. You'll want to develop familiarity with published research on bug report quality, but also develop awareness of different standards maintainers use to evaluate submitted reports. You'll be able to show employers that you can develop design requirements and create a conforming software solution that interfaces with other subsystems.
 
-**Claim Verification Team.** This team checks whether a report's claims are true. You will find the files, functions, and commits a report cites and confirm that they exist and behave as the report says. The lowest-quality reports often cite code that is not there, so this work matters. You will work directly against real codebases and their version history. You can show employers that you can analyze code and detect unsupported claims.
+**Claim Investigation Subsystem.** This team designs the subsystem that investigates a conforming report. You will write requirements, verifications, and tests for your subsystem. Your solution may need to find relevant files, code, and documentation before comparing their behavior against the report. The lowest-quality reports often cite code or bug that do not exist, or are different than claimed. You'll work directly against real codebases and their version history. You'll be able to show employers that you can develop design requirements and create a conforming software solution that interfaces with other subsystems.
 
-<!-- FOUR-TEAM VERSION. To use four teams instead of three, delete the three team descriptions above (keep the heading and intro paragraph) and uncomment the block below.
-
-**Software Systems Engineering Team.** This team decides what the system must do and how we will know it works. You will write the requirements, design the shared format for findings, and define the interfaces every other team builds to. You will assemble a dataset of historical bug reports from several open source projects, build the baselines, and build the evaluation that measures the whole system. You can show employers that you can lead requirements and verification and validation on a real system.
-
-**Integration Team.** This team builds the layer that connects the other teams' work. You will take an incoming report, pass it to the analysis teams, collect their findings, and assemble the single report the maintainer sees. You will state clearly what the system could not check. As a stretch, you may connect the system to GitHub so that a new issue is reviewed automatically. You can show employers that you can design and build the integration layer that turns separate parts into one working system.
-
-**Report Analysis Team.** This team judges a report on what it contains. You will decide whether a report includes what a good bug report needs, such as steps to reproduce and a clear statement of expected versus observed behavior. You will turn published research on bug report quality into checks the system can run. Each check produces a finding the maintainer can inspect. You can show employers that you can turn a research literature into a working evaluation of text.
-
-**Claim Verification Team.** This team checks whether a report's claims are true. You will find the files, functions, and commits a report cites and confirm that they exist and behave as the report says. The lowest-quality reports often cite code that is not there, so this work matters. You will work directly against real codebases and their version history. You can show employers that you can analyze code and detect unsupported claims.
-
--->
+**Integration Subsystem.** This team designs the subsystem that connects the other subsystems and interfaces with the user. You will write requirements, verifications, and tests for your subsystem. Your solution might need to take an incoming report, pass information between subsystems as appropriate, and assemble results into a single report the maintainer sees. As a stretch, you may connect the system to GitHub so that a new issue is reviewed automatically. You'll be able to show employers that you can develop design requirements and create a conforming software solution that interfaces with other subsystems.
 
 ## Who Should Apply
 
-You should apply if you're interested in practicing the following:
+**On Campus** and **Distance Learning** students are welcome to apply. You should apply if you're interested in practicing the following:
 
-- **Decision-making amidst ambiguity.** Working on unsolved problems (like this) creates opportunities for you to practice making decisions amidst ambiguity. Sometimes we will not know the right answer, or there will not be a right answer at all. You don't need to be comfortable with ambiguity—most people aren't, including me! But practicing making decisions with supporting evidence on a project like this will make it easier, though.
+- **Decision-making amidst ambiguity.** Working on unsolved problems (like this) creates opportunities for you to practice making decisions amidst ambiguity. Sometimes we will not know the right answer, or there will not be a right answer at all. You don't need to be comfortable with ambiguity--most people aren't, including me! But practicing making decisions with supporting evidence on a project like this will make it easier, though.
 
-- **Workplace Application of AI Models.** Whether you love AI or hate AI, you will learn what the frontier AI models can and cannot do in organizational contexts, even as capabilities evolve. What workplace activities do AIs do well, and where do they fall short? How can we bridge the gap? This is evolving, and you'll help us figure all of this out.
+- **Workplace Application of AI Models.** Whether you love AI or hate AI, you will learn what frontier AI models can and cannot do in organizational contexts, even as capabilities evolve. What workplace activities do AIs do well, and where do they fall short? How can we bridge the gap? This is evolving, and you'll help us figure all of this out.
 
 - **Teamwork.** The best companies *only* hire people who work well in teams. This project will help you prove that you can do this. You'll practice teamwork by giving each other regular (kind) feedback, carefully deciding interface requirements together, communicating about deliverables, and holding each other accountable.
 
-Python is our working language. Prior experience with AI systems, security, simulation, or open source is useful but not required. Willingness to learn in public is required.
+Python is our working language, and some experience is recommended (but not required). Prior experience with AI systems, requirements development, verification and validation, or open source is useful but not required. Willingness to learn in public is required.
 
 ## Attendance
 
