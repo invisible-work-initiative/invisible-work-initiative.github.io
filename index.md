@@ -3,7 +3,7 @@ layout: home
 title: The Invisible Work Initiative
 ---
 
-Can AI recognize and perform the work that keeps software functioning?
+Can AI recognize and perform the work that keeps software working?
 
 Software of all kinds depends on work that few people see. Reviewing bug reports, judging their severity, detecting duplicates, mentoring newcomers, and deciding what a confusing request is really asking for are all examples. Tasks like these keep critical software operating, but they rarely leave the kind of visible record that code does. This is called [invisible work](https://dl.acm.org/doi/10.1145/3757417).
 
