@@ -1,6 +1,6 @@
 ---
 layout: page
-title: M.Eng. Project: AI for Open Source Sustainability
+title: "M.Eng. Project: AI for Open Source Sustainability"
 permalink: /ai-for-oss/
 ---
 

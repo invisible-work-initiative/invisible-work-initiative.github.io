@@ -2,5 +2,5 @@ title: Invisible Work Initiative
 description: Can AI recognize, perform, and model the work that keeps software alive?
 theme: minima
 header_pages:
-  - syllabus.md
+  - syllabus-ai-for-oss.md
 markdown: kramdown

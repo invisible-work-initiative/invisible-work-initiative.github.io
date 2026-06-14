@@ -9,7 +9,7 @@ This repository is the public website for the [Invisible Work Initiative](https:
 The site uses GitHub Pages' built-in Jekyll with the `minima` theme. There is no build step to run locally. Push markdown to `main` and GitHub rebuilds the site automatically (usually within a minute or two).
 
 - `index.md` — homepage
-- `syllabus.md` — the M.Eng. project syllabus, published at `/syllabus/`
+- `syllabus-ai-for-oss.md` — the M.Eng. project syllabus, published at `/ai-for-oss/`
 - `_config.yml` — site title, description, theme, and header navigation
 
 ## Editing

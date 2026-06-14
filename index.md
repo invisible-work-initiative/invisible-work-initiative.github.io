@@ -15,6 +15,6 @@ We study this through a two-semester M.Eng. project course in the Systems Engine
 
 ## Get involved
 
-- **Read the [project syllabus](/syllabus/)** for the full description, tracks, and expectations.
+- **Read the [project syllabus](/ai-for-oss/)** for the full description, tracks, and expectations.
 - **Apply to join** through the [project application form](https://forms.gle/x56KEJ5Pex9PAeTU9).
 - **Follow the work** in our [GitHub organization](https://github.com/invisible-work-initiative). All work is developed in the open under open licenses from the start.
