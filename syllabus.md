@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Syllabus
-permalink: /syllabus/
+title: M.Eng. Project: AI for Open Source Sustainability
+permalink: /ai-for-oss/
 ---
-
-**M.Eng. Project: AI for Open Source Sustainability
 
 Can AI recognize and perform the labor that keeps software working?
 
