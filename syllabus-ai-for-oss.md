@@ -8,7 +8,7 @@ Can AI recognize and perform the labor that keeps software working?
 
 ## About this Project
 
-**Project Advisor.** John Meluso, Systems Engineering Program, Cornell University.
+**Project Advisor.** Dr. John Meluso, Systems Engineering Program, Cornell University.
 
 **Project Area.** Open Source Ecosystems, Human-AI Collaboration, AI Agents, Benchmarking and Evaluation, Data Science, Agent-Based Modeling, Sociotechnical System Design.
 
