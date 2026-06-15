@@ -6,8 +6,6 @@ permalink: /ai-for-oss/
 
 Can AI recognize and perform the labor that keeps software working?
 
-**Project Advisor:** John Meluso, PhD
-
 ## About this Project
 
 **Project Advisor.** John Meluso, Systems Engineering Program, Cornell University.
