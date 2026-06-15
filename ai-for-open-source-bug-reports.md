@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "M.Eng. Project: AI for Open Source Sustainability"
-permalink: /ai-for-oss/
+title: AI for Open Source Bug Reports
+permalink: /projects/ai-for-open-source-bug-reports/
 ---
 
 This project builds one system that addresses part of the open source sustainability challenge: an automated quality checker for incoming bug reports. Several teams build the system together. Each team owns one part and depends on the others' work (see Project Teams).
