@@ -23,7 +23,7 @@ For years, open source workers (in software and other fields) have been strainin
 
 The thesis of this initiative: ***AI systems produce vast amounts of visible work. But small numbers of humans perform the invisible work of judging and coordinating work with stakeholders. Humans alone cannot keep up with AI products. This asymmetry is breaking organizations and computing infrastructure.***
 
-We address this challenge through two-semester M.Eng. projects in the Systems Engineering Program at Cornell University, advised by Prof. John Meluso, PhD. Coordinated student teams will design systems to make open source ecosystems better for everyone involved.
+We address this challenge through two-semester M.Eng. projects in the Systems Engineering Program at Cornell University, advised by Prof. John Meluso. Coordinated student teams will design systems to make open source ecosystems better for everyone involved.
 
 ## Get involved
 
