@@ -1,6 +1,6 @@
 ---
 layout: page
-title: AI for Open Source Bug Reports
+title: "Syllabus: AI for Open Source Bug Reports"
 permalink: /projects/ai-for-open-source-bug-reports/
 ---
 
