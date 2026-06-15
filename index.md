@@ -17,7 +17,7 @@ title: The Invisible Work Initiative
   <figcaption><a href="https://xkcd.com/2347/">XKCD</a>. A bit reductive, but true in spirit!</figcaption>
 </figure>
 
-[Express interest in joining here!](https://forms.gle/zL2sdSvdaocUuAdg9)
+[Express interest in joining a project here!](https://forms.gle/zL2sdSvdaocUuAdg9)
 
 Software of all kinds depends on work that few people see. Reviewing bug reports, judging their severity, detecting duplicates, mentoring newcomers, and deciding what a confusing request is really asking for are all examples of this. Tasks like these keep critical software operating, but they rarely leave the kind of visible record that code does. This is called [invisible work](https://dl.acm.org/doi/10.1145/3757417).
 
@@ -30,5 +30,5 @@ We address this challenge through two-semester M.Eng. projects in the Systems En
 ## Get involved
 
 - **Read the [AI for Open Source Bug Reports project syllabus](/projects/ai-for-open-source-bug-reports/)** for the full description, teams, and expectations.
-- **Express interest** in joining by [submitting your contact information](https://forms.gle/zL2sdSvdaocUuAdg9).
+- **Express interest** in joining a project by [submitting your contact information](https://forms.gle/zL2sdSvdaocUuAdg9).
 - **Follow the work** in our [GitHub organization](https://github.com/invisible-work-initiative). All work is developed in the open under open licenses from the start.
