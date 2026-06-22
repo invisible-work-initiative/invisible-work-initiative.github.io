@@ -16,7 +16,7 @@ This project builds an integrated system that addresses part of the open source 
 
 ## How do I join?
 
-To apply, fill out the project application here (provided before fall semester). You'll be asked to include a resume/CV and some information about yourself! I encourage you to answer in your own words so I can get to know you; don't worry, I don't expect perfect spelling or grammar.
+To apply, fill out the project application (provided before fall semester). You'll be asked to include a resume/CV and some information about yourself! I encourage you to answer in your own words so I can get to know you; don't worry, I don't expect perfect spelling or grammar.
 
 If you receive an invitation to join:
 
@@ -66,7 +66,7 @@ Each semester, you will earn credit for successful gate reviews, peer evaluation
 
 - **20% Self Assessment.** What you contributed, what you did well, what you did not do as well as you wanted, what you would do differently, what you can do in your next role.
 
-## How we Work Together
+## How We'll Work Together
 
 I run projects by giving you a goal, targets, and kind, honest feedback. I won't give you instructions on how to reach those goals, though. This means your team gets to make the decisions, write down your reasons, and ask for help when stuck. Yes, you're likely to make lots of mistakes, which is great! *Mistakes are how we learn.* I expect us all to create an environment where everyone feels safe to make mistakes. So you'll experiment, try things, fail sometimes, and try again. An important rule, though: If a problem has blocked you for more than three days, you must seek help (from a teammate, another team, a public forum, an AI assistant). Staying silently stuck is the one form of failure this course does not credit. So help each other and we'll make progress as a team!
 
