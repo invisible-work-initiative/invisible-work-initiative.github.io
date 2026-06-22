@@ -1,10 +1,11 @@
 ---
 layout: page
-title: "Syllabus: AI for Open Source Bug Reports"
+title: AI System for Open Source Bug Report Evaluations
+subtitle: "SYSEN 5900-628 | Syllabus"
 permalink: /projects/ai-for-open-source-bug-reports/
 ---
 
-This project builds one system that addresses part of the open source sustainability challenge: an automated quality checker for incoming bug reports. Several teams build the system together. Each team owns one part and depends on the others' work (see Project Teams).
+This project builds an integrated system that addresses part of the open source sustainability challenge: an automated quality checker for incoming bug reports. Several teams build the system together. Each team owns one part and depends on the others' work (see Project Teams).
 
 **Advisor.** Dr. John Meluso, Systems Engineering Program, Cornell University.
 
