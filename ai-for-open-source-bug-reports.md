@@ -1,9 +1,10 @@
 ---
 layout: page
 title: AI System for Open Source Bug Report Evaluations
-subtitle: "SYSEN 5900-628 | Syllabus"
 permalink: /projects/ai-for-open-source-bug-reports/
 ---
+
+**SYSEN 5900-628 | Syllabus**
 
 This project builds an integrated system that addresses part of the open source sustainability challenge: an automated quality checker for incoming bug reports. Several teams build the system together. Each team owns one part and depends on the others' work (see Project Teams).
 
@@ -13,7 +14,7 @@ This project builds an integrated system that addresses part of the open source 
 
 **Keywords.** Artificial Intelligence; Invisible Labor; Open Source Sustainability; AI Agents; Benchmarks; Agent-Based Modeling; Human-AI Teaming; Triage.
 
-**Short titles.** AI for OSS, AI for Open Source Bug Reports
+**Alternate titles.** AI for OSS, AI for Open Source Bug Reports
 
 
 
