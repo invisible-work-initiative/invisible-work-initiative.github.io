@@ -6,11 +6,11 @@ permalink: /projects/ai-for-open-source-bug-reports/
 
 This project builds an integrated system that addresses part of the open source sustainability challenge: an automated quality checker for incoming bug reports. Several teams build the system together. Each team owns one part and depends on the others' work (see Project Teams).
 
-| **Course.** | SYSEN 5900-628 (19049) |
-| **Advisor.** | Dr. John Meluso, Systems Engineering Program, Cornell University. |
-| **Topics.** | Open Source Ecosystems, Human-AI Collaboration, AI Agents, Benchmarking and Evaluation, Data Science, Agent-Based Modeling, Sociotechnical System Design. |
-| **Keywords.** | Artificial Intelligence; Invisible Labor; Open Source Sustainability; AI Agents; Benchmarks; Agent-Based Modeling; Human-AI Teaming; Triage. |
-| **Alternate titles.** | AI for OSS, AI for Open Source Bug Reports |
+| **Course** | SYSEN 5900-628 (19049) |
+| **Advisor** | Dr. John Meluso, Systems Engineering Program, Cornell University. |
+| **Topics** | Open Source Ecosystems, Human-AI Collaboration, AI Agents, Benchmarking and Evaluation, Data Science, Agent-Based Modeling, Sociotechnical System Design. |
+| **Keywords** | Artificial Intelligence; Invisible Labor; Open Source Sustainability; AI Agents; Benchmarks; Agent-Based Modeling; Human-AI Teaming; Triage. |
+| **Alternate titles** | AI for OSS, AI for Open Source Bug Reports |
 
 
 
